@@ -362,6 +362,21 @@ Object.entries(obj).forEach((value) => {
 })
 */
 
+/*
+let obj = {
+	My: "name",
+	is: "Rudolf",
+	the: "raindeer."
+}
+
+const christmas = (o) => {
+	return Object.entries(o).map((value) => value.join(" ")).join(" ");
+}
+
+console.log(christmas(obj))
+*/
+
+
 //9. Loops
 
 //for
@@ -571,40 +586,30 @@ console.log(w.padStart(10) + " my friend");
 console.log(w.padEnd(10) + " my friend");
 */
 
-//replace
+//Replace
 /*
 let a = "hello"
 console.log(a.replace("o", " yeah"));
 */
 
+//Trim
 
-class Player {
-	constructor(name, age) {
-		this.name = name;
-		this.age = age;
-	}
-}
+//console.log("     Hello     ".trim());
 
-class Tennis extends Player {
-	constructor(name, age) {
-		super(name, age)
-	}
-	play = () => {
-		console.log(this.name, this.age);	
-	}
-}
 
-class DragonBoat extends Player {
-	constructor(name, age) {
-		super(name, age)
-	}
-	play = () => {
-		console.log(this.name, this.age);	
-	}
-}
+//Join
+/*
+console.log([1, 2, 3, 4]);
+console.log([1, 2, 3, 4].join());
+console.log([1, 2, 3, 4].join(""));
+console.log([1, 2, 3, 4].join(" "));
+console.log(["Hello", "Hey", "Hi"].join(""));
+*/
 
-const dragonboat1 = new DragonBoat("Helena", 25);
-const tennis1 = new Tennis("John", 26);
 
-console.log(tennis1)
-console.log(dragonboat1)
+//Flat
+
+console.log([1, 2, 3, [4, 5, 6], "seven", "eight", [[[[["nine"], "ten"]]]]].flat(5))
+console.log(["Tom", "Jerry" , , , , , "Snoopy"]);
+console.log(["Tom", "Jerry" , , , , , "Snoopy"].flat(1));
+
