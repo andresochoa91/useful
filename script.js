@@ -445,7 +445,7 @@ const basket2 = {
 };
 
 for(fruit in basket2) {
-	console.log(fruit);	
+	console.log(fruit, basket2[fruit]);	
 }
 */
 
@@ -703,7 +703,36 @@ console.log("3")
 */
 
 
+//sort
+
+//console.log(["P", "a", "r", "i", "s", 2, 1, " ", "."].sort())
+
+
 //sort((a, b) => a - b)
 
 //console.log([99, 1, 3, 4, 30, 5].sort((a, b) => a - b))
+
+
+//charAt
+
+//console.log("Hello".charAt(2))  
+
+
+//Split
+
+//console.log("Paris".split(""))
+
+
+//typeof
+/*
+console.log(typeof "hello" === "string");
+console.log(typeof 1 === "number");
+console.log(typeof {1: "Hey"} === "object");
+*/
+
+
+//Array.isArray()
+
+//console.log(Array.isArray([[1, 2, 3]]))
+
 
