@@ -416,6 +416,40 @@ numbers.forEach(function(i) {
 */
 
 
+//for of
+/*
+const basket = ["apples", "oranges", "grapes"];
+
+for(item of basket) {
+	console.log(item);
+}
+
+for(item of "basket") {
+	console.log(item);
+}
+*/
+
+
+//for in
+/*
+const basket = ["apples", "oranges", "grapes"];
+
+for(item in basket) {
+	console.log(item);
+}
+
+const basket2 = {
+	apples: 5, 
+	oranges: 10, 
+	grapes: 15
+};
+
+for(fruit in basket2) {
+	console.log(fruit);	
+}
+*/
+
+
 //10. Callbacks
 
 /*
@@ -607,9 +641,69 @@ console.log(["Hello", "Hey", "Hi"].join(""));
 */
 
 
-//Flat
-
+//flat
+/*
 console.log([1, 2, 3, [4, 5, 6], "seven", "eight", [[[[["nine"], "ten"]]]]].flat(5))
 console.log(["Tom", "Jerry" , , , , , "Snoopy"]);
 console.log(["Tom", "Jerry" , , , , , "Snoopy"].flat(1));
+*/
+
+
+//flatMap
+/*
+const name = ["Tim", "Tom", "Peter", ["John", "Jane"]];
+const family = "Vai";
+const fullName = name.flatMap(user => `${user} ${family}`);
+console.log(fullName);
+*/
+
+
+//trimStart
+
+//console.log("    John".trimStart())
+
+
+//trimEnd
+/*
+console.log("Tom     " + "Sawyer")
+console.log("Tom     ".trimEnd() + " Sawyer")
+*/
+
+
+//Object.fromEntries()
+/*
+let user = [["Tam", 23], ["Tim", 24], ["Tom", 25]];
+console.log(Object.fromEntries(user));
+*/
+
+
+//try catch
+/*
+try {
+	console.log(2 + 2);
+}catch {
+	console.log("Error");
+}
+
+try {
+	console.log(dos + 2);
+}catch {
+	console.log("Error");
+}
+*/
+
+
+//setTimeout
+/*
+console.log("1");
+setTimeout(() => {
+	console.log("2");
+}, 0)
+console.log("3")
+*/
+
+
+//sort((a, b) => a - b)
+
+//console.log([99, 1, 3, 4, 30, 5].sort((a, b) => a - b))
 
