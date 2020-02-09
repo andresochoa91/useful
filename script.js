@@ -855,6 +855,45 @@ console.log(parseInt("ff", 16));
 */
 
 
+//console.time
+/*
+console.time("testing time");
+let x = "Hello";
+let y = "Bye";
+console.log(x, y);
+console.timeEnd("testing time")
+*/
+
+
+//.some
+/*
+let arr = [1, 2, 3, 4, 5];
+
+arr.some(value => {
+	console.log(value);
+	return value > 3;
+})
 
 
 
+let arr2 = ["John", "Jane", "Jessica", "James"];
+
+arr2.some(value => {
+	if(value.includes("Ja")) {
+		console.log(value);
+	}
+})
+*/
+
+
+//Promises
+
+const promise = new Promise ((resolve, reject) => {
+	if (true) {
+		resolve("stuff worked");
+	} else {
+		reject("Error, it broke");
+	}
+});
+
+promise.then(result => console.log(result));
