@@ -377,6 +377,30 @@ console.log(christmas(obj))
 */
 
 
+//Object spread operator
+/*
+const animals = {
+	tiger: 13,
+	lion: 5,
+	monkey: 2
+};
+
+const { tiger, ...rest } = animals;
+
+console.log(tiger);
+for(animal in rest) {
+	console.log(rest[animal]);
+};
+
+
+const array = [1, 2, 3, 4, 5];
+
+const sum = (a, b, c, d, e) => a + b + c + d + e ; 
+
+console.log(sum(...array))
+*/
+
+
 //9. Loops
 
 //for
@@ -734,5 +758,103 @@ console.log(typeof {1: "Hey"} === "object");
 //Array.isArray()
 
 //console.log(Array.isArray([[1, 2, 3]]))
+
+
+//Math.round()
+/*
+console.log(Math.round(4.4));
+console.log(Math.round(4.6));
+*/
+
+
+//Math.pow()
+/*
+console.log(Math.pow(8, 2));
+console.log(Math.pow(3, 4));
+*/
+
+
+//Math.sqrt()
+
+//console.log(Math.sqrt(64))
+
+
+//Math.abs()
+/*
+console.log(Math.abs(4.4));
+console.log(Math.abs(-4.4));
+*/
+
+
+//Math.ceil()
+/*
+console.log(Math.ceil(4.4));
+console.log(Math.ceil(4.6))
+*/
+
+
+//Math.floor()
+/*
+console.log(Math.floor(4.4));
+console.log(Math.floor(4.6));
+*/
+
+
+//Math.min/max
+/*
+console.log(Math.min(0, 150, 30, 20, -8));
+console.log(Math.max(0, 150, 30, 20, -8));
+*/
+
+
+//Math.random()
+/*
+console.log(Math.random())
+console.log(Math.round(Math.random() * 100))
+*/
+
+
+//.substring() & .substr()
+/*
+console.log("hello".substring(1, 3));
+console.log("hello".substr(1, 3) + "\n");
+
+console.log("hello everybody".substring(2, 0));
+console.log("hello everybody".substr(2, 0) + "\n");
+
+console.log("hello everybody".substring(3, 1));
+console.log("hello everybody".substr(3, 1) + "\n");
+
+console.log("hello everybody".substring(2, 2));
+console.log("hello everybody".substr(2, 2));
+*/
+
+
+//.toString()
+/*
+let n = 365;
+
+console.log(n) //natural number
+console.log(n.toString()); //to string
+console.log(n.toString(2)); //to string binary
+console.log(n.toString(8)); //to string octal
+console.log(n.toString(16)); //to string hexadecimal
+*/
+
+
+//parseInt()
+/*
+let a = "100"
+
+console.log(a);
+console.log(parseInt(a));
+console.log(parseInt(a, 2));
+console.log(parseInt(a, 8));
+console.log(parseInt(a, 16));
+console.log(parseInt("ff", 16));
+*/
+
+
+
 
 
