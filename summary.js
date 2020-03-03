@@ -887,7 +887,7 @@ arr2.some(value => {
 
 
 //Promises
-
+/*
 const promise = new Promise ((resolve, reject) => {
 	if (true) {
 		resolve("stuff worked");
@@ -897,3 +897,4 @@ const promise = new Promise ((resolve, reject) => {
 });
 
 promise.then(result => console.log(result));
+*/
