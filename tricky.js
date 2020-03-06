@@ -11,6 +11,7 @@
 //console.log("5" + 1);
 //console.log("five" - 1);
 //console.log(3 < "a");
+//console.log("3" < "a");
 //console.log("3" > 1);
 //console.log(3 != 3);
 //console.log(true >= 0);
@@ -24,6 +25,9 @@
 //console.log(NaN === NaN);
 //console.log(undefined === undefined);
 //console.log(null === null);
+//console.log([] === []);
+//console.log([1] === [1]);
+//console.log({} === {});
 //console.log(null == undefined);
 //console.log(null === undefined);
 //console.log(null == 0);
@@ -52,4 +56,4 @@
 //console.log(false && "Andres");
 //console.log(null && "Andres");
 //console.log(NaN && "Andres");
-console.log(undefined && "Andres");
+//console.log(undefined && "Andres");
