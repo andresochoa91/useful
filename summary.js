@@ -813,6 +813,8 @@ console.log(Math.random())
 console.log(Math.round(Math.random() * 100))
 */
 
+//.toFixed()
+//console.log(32.03658.toFixed(2))
 
 //.substring() & .substr()
 /*
@@ -886,6 +888,25 @@ arr2.some(value => {
 */
 
 
+//isNaN()
+//console.log(isNaN("three"));
+
+
+
+//.repeat();
+//console.log("hello\n".repeat(5));
+
+
+//Set
+/*
+let mySet = new Set([1, 2, 3, 4]);
+mySet.add(5).add(6);
+console.log(mySet.size);
+console.log(mySet.has(6));
+console.log(mySet);
+*/
+
+
 //Promises
 /*
 const promise = new Promise ((resolve, reject) => {
@@ -898,3 +919,4 @@ const promise = new Promise ((resolve, reject) => {
 
 promise.then(result => console.log(result));
 */
+
