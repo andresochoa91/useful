@@ -1,8 +1,20 @@
 //1. Variables: var const let
 
-//2. alert("hello")
+//2. alert("hello");
+//// prompt("hello");
+////console.log("hello");	
 
-//3. prompt("hello")
+//3. Operators:
+//let x = 4; 
+////x++;
+////++x;
+////x--;
+////--x;
+////x += 2;
+////x -= 2;
+////x *= 2;
+////x /= 2;
+//console.log(x);
 
 //4. conditionals:
 
@@ -109,6 +121,29 @@ const first = () => {
 const newFunc = () => first();
 
 newFunc()
+*/
+
+
+/*
+function wrapValue(n) {
+  let local = n;
+  return () => local;
+}
+
+let wrap1 = wrapValue(1);
+let wrap2 = wrapValue(2);
+console.log(wrap1());
+console.log(wrap2());
+*/
+
+
+/*
+function multiplier(factor) {
+  return number => number * factor;
+}
+
+let twice = multiplier(2);
+console.log(twice(5));
 */
 
 
@@ -758,6 +793,16 @@ console.log(typeof {1: "Hey"} === "object");
 //Array.isArray()
 
 //console.log(Array.isArray([[1, 2, 3]]))
+
+
+//splice()
+/*
+let arr = ["a", "b", "c", "d", "e"];
+arr.splice(1, 1, "hello", "hi", "I'm happy");
+console.log(arr)
+arr.splice(1, (1, 2, 3), "b", "c", "d")
+console.log(arr)
+*/
 
 
 //Math.round()
