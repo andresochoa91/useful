@@ -190,31 +190,52 @@ console.log(list2[2][3]);
 */
 
 
-//7. Methods in arrays
-/*
-var numbers = [1, 2, 3, 4, 5];
-
-//console.log(numbers.shift());
-//console.log(numbers.pop());
-//console.log(numbers.concat([6, 7]));
-//console.log(numbers.push(6, 7));
-//console.log(numbers.reverse());
-//console.log(numbers.sort());
-/*
-const mapArray = numbers.map((num) => num * 2);
-console.log(mapArray);
-*/
-/*
-const filterArray = numbers.filter((num) => num > 2)
-console.log(filterArray);
-*/
-/*
-const reduceArray = numbers.reduce((a, num) => {
-	return a * num
-}, 2);
-
-console.log(reduceArray);
-*/
+////7. Methods in arrays
+//
+//var numbers = [1, 2, 3, 4, 5];
+//
+///*
+//numbers.shift();
+//console.log(numbers);
+//*/
+//
+///*
+//numbers.unshift(20);
+//console.log(numbers);
+//*/
+//
+///*
+//numbers.pop();
+//console.log(numbers);
+//*/
+//
+///*
+//numbers.push(6, 7);
+//console.log(numbers);
+//*/
+//
+////console.log(numbers.concat([6, 7]));
+////console.log(numbers.reverse());
+////console.log(numbers.sort());
+////console.log(numbers.slice(1, 4));
+//
+///*
+//const mapArray = numbers.map((num) => num * 2);
+//console.log(mapArray);
+//*/
+//
+///*
+//const filterArray = numbers.filter((num) => num > 2)
+//console.log(filterArray);
+//*/
+//
+///*
+//const reduceArray = numbers.reduce((a, num) => {
+//	return a * num
+//}, 2);
+//
+//console.log(reduceArray);
+//*/
 
 
 //8. Objects
