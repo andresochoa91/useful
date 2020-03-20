@@ -880,7 +880,7 @@ console.log(Math.round(Math.random() * 100))
 */
 
 //.toFixed()
-//console.log(32.03658.toFixed(2))
+//console.log(32.03658.toFixed(2))  //It returns a String, not a number
 
 //.substring() & .substr()
 /*
