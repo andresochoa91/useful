@@ -676,6 +676,13 @@ console.log(word.includes("llo"));
 console.log(word.includes("elo"));
 */
 
+
+//.indexOf()
+//console.log("Hello".indexOf("l"));
+//console.log("Quicksort".indexOf("sort"));
+//console.log(['butter', 'sugar', 'flour', 'chocolate chips'].indexOf("sugar"));
+
+
 /*
 let arr = [1, 2, 3, "four", "five"];
 console.log(arr.includes("four"));
@@ -801,6 +808,7 @@ console.log("3")
 //Split
 
 //console.log("Paris".split(""))
+//console.log("git push origin master".split(" "));
 
 
 //typeof
@@ -879,6 +887,13 @@ console.log(Math.random())
 console.log(Math.round(Math.random() * 100))
 */
 
+
+/*
+var a = 90, b = 100;
+Math.random() * (b - a) + a;   //Random number between a & b; 
+*/
+
+
 //.toFixed()
 //console.log(32.03658.toFixed(2))  //It returns a String, not a number
 
@@ -909,6 +924,11 @@ console.log(n.toString(8)); //to string octal
 console.log(n.toString(16)); //to string hexadecimal
 */
 
+/*
+console.log(17.toString());
+console.log(Number(17).toString()); 
+*/
+
 
 //parseInt()
 /*
@@ -921,6 +941,14 @@ console.log(parseInt(a, 8));
 console.log(parseInt(a, 16));
 console.log(parseInt("ff", 16));
 */
+
+
+//Number.parseInt()
+//console.log(Number.parseInt("25"));
+
+
+//Number.parseFloat()
+//console.log(Number.parseInt("25.45"));
 
 
 //console.time
