@@ -466,6 +466,16 @@ for (let i = 0; i < 10; i++) {
 }
 */
 
+/*
+for (let i = 0; i < 10; i++) {
+	if (i % 2 === 0) {
+		continue;
+	}
+	console.log(i)
+}
+*/
+
+
 //while
 /*
 let c = 0;
