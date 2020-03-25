@@ -218,6 +218,7 @@ console.log(list2[2][3]);
 ////console.log(numbers.reverse());
 ////console.log(numbers.sort());
 ////console.log(numbers.slice(1, 4));
+//console.log("Hello".slice(1));
 //
 ///*
 //const mapArray = numbers.map((num) => num * 2);
