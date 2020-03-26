@@ -458,6 +458,19 @@ console.log(sum(...array))
 */
 
 
+//key in object
+/*
+let obj = {
+  a: 1,
+  b: 2,
+  c: 3
+}
+console.log("c" in obj); //check if key "c" is in obj
+console.log("d" in obj);
+*/
+
+
+
 //9. Loops
 
 //for
@@ -692,6 +705,7 @@ console.log(word.includes("elo"));
 //console.log("Hello".indexOf("l"));
 //console.log("Quicksort".indexOf("sort"));
 //console.log(['butter', 'sugar', 'flour', 'chocolate chips'].indexOf("sugar"));
+//console.log([1, 2, 3, 4, 5].indexOf(6));
 
 
 /*
