@@ -436,6 +436,21 @@ console.log(christmas(obj))
 
 //Object spread operator
 /*
+let obj = {           //good way to copy an object or array without having the reference of it
+  a: 1,
+  b: 2,
+  c: 3
+};
+
+let obj2 = {...obj};
+obj2.a = 4;
+
+console.log(obj);
+console.log(obj2);
+*/
+
+
+/*
 const animals = {
 	tiger: 13,
 	lion: 5,
@@ -1039,3 +1054,13 @@ const promise = new Promise ((resolve, reject) => {
 promise.then(result => console.log(result));
 */
 
+//Spread operator in arrays
+/*
+let arr = [1, 2, 3, 4, 5];
+let arr2 = [...arr];
+
+arr2.push(6, 7, 8);
+
+console.log(arr2);
+console.log(arr);
+*/
