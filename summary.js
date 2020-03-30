@@ -434,6 +434,19 @@ console.log(christmas(obj))
 */
 
 
+//Object.assign
+/*
+let obj = {
+  a: 1,
+  b: 2,
+  c: 3
+}
+
+Object.assign(obj, {c: 4, d: 5});
+console.log(obj)
+*/
+
+
 //Object spread operator
 /*
 let obj = {           //good way to copy an object or array without having the reference of it
@@ -484,6 +497,18 @@ console.log("c" in obj); //check if key "c" is in obj
 console.log("d" in obj);
 */
 
+
+//Lycanthrope's log
+/*
+let arr = [];
+
+function addEntry (value, value2, value3) {
+  arr.push({value, value2, value3});
+  console.log(arr)
+}
+
+addEntry("hi", "hello", "hey");
+*/
 
 
 //9. Loops
@@ -1063,4 +1088,11 @@ arr2.push(6, 7, 8);
 
 console.log(arr2);
 console.log(arr);
+*/
+
+/*
+let arr2 = ["what's", "up"];
+
+console.log("hey", arr2, "bro");
+console.log("hey", ...arr2, "bro");
 */
