@@ -1057,13 +1057,15 @@ arr2.some(value => {
 
 
 //Set
-/*
+
 let mySet = new Set([1, 2, 3, 4]);
 mySet.add(5).add(6);
 console.log(mySet.size);
 console.log(mySet.has(6));
 console.log(mySet);
-*/
+mySet.delete(4);
+console.log(mySet)
+
 
 
 //Promises
