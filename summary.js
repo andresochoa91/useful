@@ -778,6 +778,11 @@ let a = "hello"
 console.log(a.replace("o", " yeah"));
 */
 
+/*
+let a = "hello, my friend how, are you?.";
+console.log(a.replace(/[,.?]/g, "666"));
+*/
+
 //Trim
 
 //console.log("     Hello     ".trim());
