@@ -1072,6 +1072,11 @@ mySet.delete(4);
 console.log(mySet)
 */
 
+/*
+let arr = [2, 1, 1, 2, 3];
+let mySet = new Set(arr);
+console.log(mySet);
+*/
 
 //Promises
 /*
@@ -1102,4 +1107,9 @@ let arr2 = ["what's", "up"];
 
 console.log("hey", arr2, "bro");
 console.log("hey", ...arr2, "bro");
+*/
+
+/*
+let [a, b, c, ...d] = [1, 2, 3, 4, 5];
+console.log(d);
 */
