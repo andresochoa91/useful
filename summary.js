@@ -1,10 +1,17 @@
 //1. Variables: var const let
 
-//2. alert("hello");
-//// prompt("hello");
-////console.log("hello");	
+////2. alert("hello");
+// prompt("hello");
+//console.log("hello");	
 
-//3. Operators:
+// let obj = {a: 1, b: 2, c: 3};
+// console.table(obj);
+
+// console.error("This is an error");
+// console.warn("This is a warning");
+// console.clear();
+
+////3. Operators:
 //let x = 4; 
 ////x++;
 ////++x;
@@ -82,6 +89,14 @@ function multiply(a, b) {
 
 console.log(multiply(2, 4));
 */
+
+
+//Immidiatley Invokable Function Expression - IIFE
+
+let firstName = "Andres"; 
+(function (name) {
+	console.log("Hello " + name);
+})(firstName);
 
 
 //Arrow functions
@@ -192,7 +207,7 @@ console.log(list2[2][3]);
 
 ////7. Methods in arrays
 //
-//var numbers = [1, 2, 3, 4, 5];
+var numbers = [1, 2, 3, 4, 5];
 //
 ///*
 //numbers.shift();
@@ -214,11 +229,12 @@ console.log(list2[2][3]);
 //console.log(numbers);
 //*/
 //
-////console.log(numbers.concat([6, 7]));
+//console.log(numbers.concat([6, 7]));
 ////console.log(numbers.reverse());
 ////console.log(numbers.sort());
 ////console.log(numbers.slice(1, 4));
 //console.log("Hello".slice(1));
+//console.log("Helloo".slice(-3))
 //
 ///*
 //const mapArray = numbers.map((num) => num * 2);
@@ -903,6 +919,11 @@ arr.splice(1, (1, 2, 3), "b", "c", "d")
 console.log(arr)
 */
 
+//Math.PI
+////console.log(Math.PI);
+
+//Math.E
+//console.log(Math.E);
 
 //Math.round()
 /*
@@ -999,6 +1020,15 @@ console.log(17.toString());
 console.log(Number(17).toString()); 
 */
 
+/* 
+let val = 666;
+console.log(String(val).length);
+ */
+
+/* 
+let val = [1, 2, 3, 4];
+console.log(String(val));
+ */
 
 //parseInt()
 /*
@@ -1113,3 +1143,39 @@ console.log("hey", ...arr2, "bro");
 let [a, b, c, ...d] = [1, 2, 3, 4, 5];
 console.log(d);
 */
+
+
+// //Date
+// const today = new Date();
+// console.log(today);
+
+
+// //Number
+// let num = "60"
+// console.log(Number(num) + 10);
+// console.log(Number(true));
+// console.log(Number(false));
+// console.log(Number(null));
+// console.log(Number(undefined));
+// console.log(Number(NaN));
+
+
+// //Concat
+// let val1 = "Hello";
+// let val2 = "you";
+// let phrase = val1.concat(", ", val1, " how are ", val2);
+// console.log(phrase);
+
+
+// //IndexOf
+// let word = "heeeyyyy";
+// console.log(word.indexOf("e"));
+// console.log(word.lastIndexOf("e"));
+
+
+// //Find    //Find just works with functions
+// let arr = [1, 2, 3, 4, 5, 6];
+// const above4 = (num) => {
+// 	return num > 4;
+// }
+// console.log(arr.find(above4));
