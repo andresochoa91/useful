@@ -2,6 +2,12 @@
 
 ////2. alert("hello");
 // prompt("hello");
+if (confirm("Are you sure?")) {
+	console.log("YES");
+} else {
+	console.log("NO");
+}
+
 //console.log("hello");	
 
 // let obj = {a: 1, b: 2, c: 3};
@@ -93,10 +99,10 @@ console.log(multiply(2, 4));
 
 //Immidiatley Invokable Function Expression - IIFE
 
-let firstName = "Andres"; 
-(function (name) {
-	console.log("Hello " + name);
-})(firstName);
+// let firstName = "Andres"; 
+// (function (name) {
+// 	console.log("Hello " + name);
+// })(firstName);
 
 
 //Arrow functions
@@ -1146,8 +1152,24 @@ console.log(d);
 
 
 // //Date
-// const today = new Date();
+// let today = new Date();
+//let birthday = new Date("4-1-1991 22:10:00");
+
+// console.log(birthday);
 // console.log(today);
+// console.log(today.getMonth());
+// console.log(today.getDay());  //Represantation of day of the week
+// console.log(today.getDate());
+// console.log(today.getFullYear());
+// console.log(today.getHours());
+// console.log(today.getMinutes());
+// console.log(today.getSeconds());
+// console.log(today.getMilliseconds());
+// console.log(today.getTime());
+// birthday.setMonth(5);
+// birthday.setDate(5);
+// birthday.setFullYear(5);
+// console.log(birthday);
 
 
 // //Number
