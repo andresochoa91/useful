@@ -2,11 +2,11 @@
 
 ////2. alert("hello");
 // prompt("hello");
-if (confirm("Are you sure?")) {
-	console.log("YES");
-} else {
-	console.log("NO");
-}
+// if (confirm("Are you sure?")) {
+// 	console.log("YES");
+// } else {
+// 	console.log("NO");
+// }
 
 //console.log("hello");	
 
