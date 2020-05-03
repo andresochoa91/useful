@@ -10,7 +10,7 @@
 
 // console.log(listItems);
 
-// document.getElementsByTagName
+// // document.getElementsByTagName
 // let lis = document.getElementsByTagName('li');
 // console.log(lis);
 // console.log(lis[0]);
