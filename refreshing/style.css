@@ -1,0 +1,46 @@
+body{
+  background-color: burlywood;
+  color: darkslategray;
+  /* font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: normal; */
+  font: normal 16px Arial, Helvetica, sans-serif;
+  margin: 5%;
+  line-height: 30px;
+}
+
+nav{
+  text-align: right;
+  float: right;
+  align-self: right;
+  border: black solid 1px;
+  min-width: 30%;
+}
+
+nav a{
+  color: blue;
+  padding: 0px 10px;
+}
+
+a:hover{
+  color: red;
+}
+
+a:active{
+  color: green;
+}
+
+h2{
+  margin-top: 0;
+  letter-spacing: 0.5em;
+}
+
+h1{
+  background-color: black;
+  color: bisque;
+  padding: 20px;
+}
+
+#intro{
+  word-spacing: 0.5em;
+}
