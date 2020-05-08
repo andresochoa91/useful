@@ -2,12 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Make it responsive all devices -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- compatibility with Internet Explorer -->
+  <meta name="description" content="This is my website description"> <!-- The description of my website in Search engines -->
+  <meta name="keywords" content="Web development, web design"> <!-- Keywords that describe website content-->
+  <meta name="robots" content="NOINDEX, NOFOLLOW"> <!-- To not show up website in search engines -->
   <title>HTML Cheat Sheet</title>
+  <style>
+    span {
+      background-color: black;
+      color: yellow;
+    }
+  </style>
 </head>
 <body>
   <a href="./blog.html">Go to blog</a>
-  <h1>"h1"</h1>
+  <h1>"h1"</h1> <!-- Preferible using just 1 h1 per page -->
   <h2>"h2"</h2>
   <h3>"h3"</h3>
   <h4>"h4"</h4>
@@ -18,9 +28,12 @@
   <p>
     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, commodi laudantium velit ad obcaecati quibusdam corporis dolore numquam corrupti a nisi illum modi ex nostrum ut libero est enim praesentium.
   </p>
+  <!-- <p>lorem10</p> 10 words-->
+  <!-- <p>lorem20</p> 20 words-->
 
   <p>This is <strong>"strong"</strong></p>
   <p>This is <em>"em" (emphasize)</em></p>
+  <del>del</del>
   <p>link</p>
   <a href="https://www.google.com/">a href="https://www.google.com/"</a>
   <p>Line break "br"</p><br>
@@ -37,6 +50,27 @@
 
   <p>"ol"</p>
   <ol>
+    <li>"li"</li>
+    <li>"li"</li>
+    <li>"li"</li>
+    <li>"li"</li>
+  </ol>
+  <p>"ol" type="a"</p>
+  <ol type="a">
+    <li>"li"</li>
+    <li>"li"</li>
+    <li>"li"</li>
+    <li>"li"</li>
+  </ol>
+  <p>"ol" type="A"</p>
+  <ol type="A">
+    <li>"li"</li>
+    <li>"li"</li>
+    <li>"li"</li>
+    <li>"li"</li>
+  </ol>
+  <p>"ol" type="I"</p>
+  <ol type="I">
     <li>"li"</li>
     <li>"li"</li>
     <li>"li"</li>
@@ -74,8 +108,8 @@
   <form action="process.pho" method="GET">
     <p>div1</p>
     <div>
-      <label>label1</label>
-      <input type="text" name="input" placeholder="label1">
+      <label for="input">label1</label> <!-- for in case we use id in the input, when click in the browser it highlight the box -->
+      <input type="text" name="input" id="input" placeholder="label1">
     </div>
     <p>div2</p>
     <div>
@@ -90,7 +124,7 @@
     <br>
     <div>
       <label>textarea</label>
-      <textarea name="textarea"></textarea>
+      <textarea name="textarea" cols="100" rows="10"></textarea>
     </div>
     <br>
     <div>
@@ -98,7 +132,7 @@
       <select name="select">
         <option value="1">1</option>
         <option value="2">2</option>
-        <option value="3">3</option>
+        <option selected value="3">3</option> <!-- selected is to mark it automatically -->
       </select>
     </div>
     <br>
@@ -112,10 +146,27 @@
       <input type="date" name="date">
     </div>
     <br>
+    <div>
+      <label for="radio">Radios</label>
+      <br>
+      <input type="radio" name="radio" value="radio1">Radio1
+      <input type="radio" name="radio" value="radio2">Radio2
+      <input type="radio" name="radio" checked value="radio3">Radio3 <!-- checked is to mark it automatically -->
+    </div>
+    <div>
+      <br>
+      <label for="radio">Checkbox</label>
+      <br>
+      <input type="checkbox" name="checkbox" value="checkbox1">checkbox1
+      <input type="checkbox" name="checkbox" checked value="checkbox2">checkbox2 <!-- checked is to mark it automatically -->
+      <input type="checkbox" name="checkbox" value="checkbox3">checkbox3 
+    </div>
+    <br>
     <input type="submit" name="submit" value="submit">
+    <button click="somefunction">button</button>
+    <button type="reset">Reset button</button>
   </form>  
   <br>
-  <button click="somefunction">button</button>
   <br>
   <br>
   <a href="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fnyfalls.com%2Fdev%2Fwp-content%2Fuploads%2F2013%2F04%2FProcyon-lotor-2.jpg&f=1&nofb=1">
@@ -128,8 +179,27 @@
   <p><abbr title="abbreviation">abbr</abbr></p>
   <p><cite>cite</cite> of the phrase</p>
 
-   
-
+  <p>Lorem ipsum dolor sit amet <span>consectetur adipisicing elit. Deleniti</span> unde eum aliquam cumque blanditiis dicta.</p> 
+  <br>
+  <strong>Entities</strong>
+  <p>Without            space</p>
+  <p>With &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;space</p>
+  <p>&gt;</p>
+  <p>&lt;</p>
+  <p>&copy;</p>
+  <p>&reg;</p>
+  <p>&cent;</p>
+  <p>&pound;</p>
+  <p>&yen;</p>
+  <p>&diams;</p>
+  <p>&clubs;</p>
+  <p>&hearts;;</p>
+  <p>&spades;;</p>
+  <code>
+    &lt;?php echo "Hello" ?&gt;
+  </code>
+  <p>Save file by pressing <kbd>Ctrl + s</kbd></p>
+  
   <div style="margin-top: 500px;"></div>
 
 </body>
