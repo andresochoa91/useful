@@ -44,3 +44,7 @@ h1{
 #intro{
   word-spacing: 0.5em;
 }
+
+.bold{
+  font-weight: bold;
+}
