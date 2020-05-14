@@ -1114,6 +1114,19 @@ let mySet = new Set(arr);
 console.log(mySet);
 */
 
+// //Map
+// let map = new Map([["greeting", "hello"], [2, "bye"]]);
+// let map2 = new Map();
+// console.log(map);
+// let arr =  [true, false];
+// map.set(arr, "this is an array");
+// console.log(map.get(arr));
+// map.set(2, map.get(2) + " my friend");
+// console.log(map);
+// console.log(map.has("greeting"));
+// map.clear();
+// console.log(map);
+
 //Promises
 /*
 const promise = new Promise ((resolve, reject) => {
