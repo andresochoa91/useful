@@ -1,41 +1,34 @@
-const form = document.querySelector('form');
-const taskInput = document.getElementById('task');
-const heading = document.querySelector('h5');
-const select = document.querySelector('select');
+const form = document.querySelector("form");
+const taskInput = document.getElementById("task");
+const heading = document.querySelector("h5");
 
-// Clear input
-taskInput.value = '';
+//taskInput.value = ""; //If I want to clear input
 
-// form.addEventListener('submit', runEvent);
+//form.addEventListener("submit", runEvent);
+ 
+//taskInput.addEventListener("keydown", runEvent);
+//taskInput.addEventListener("keyup", runEvent); //When key up after pressing
+//taskInput.addEventListener("keypress", runEvent); //Generalized
 
-// Keydown
-//taskInput.addEventListener('keydown', runEvent);
-// Keydown
-// taskInput.addEventListener('keyup', runEvent);
-// Keypress
-// taskInput.addEventListener('keypress', runEvent);
-// Focus
-// taskInput.addEventListener('focus', runEvent);
-// Blur
-// taskInput.addEventListener('blur', runEvent);
-// Cut
-// taskInput.addEventListener('cut', runEvent);
-// Paste
-// taskInput.addEventListener('paste', runEvent);
-// Input
-// taskInput.addEventListener('input', runEvent);
-// Change
-select.addEventListener('change', runEvent);
+//taskInput.addEventListener("focus", runEvent); //When click on input
+//taskInput.addEventListener("blur", runEvent); //After clicking on input and afterwards clicking out
 
-function runEvent(e){
-  console.log(`EVENT TYPE: ${e.type}`);
+//taskInput.addEventListener("change", runEvent); //Good with dropdowns
 
-  //console.log(e.target.value);
+//taskInput.addEventListener("cut", runEvent); //Run when cut inside input
+//taskInput.addEventListener("copy", runEvent); //Run when cut inside input
+//taskInput.addEventListener("paste", runEvent); //Run when cut inside input
 
-  // heading.innerText = e.target.value;
 
-  // Get input value
+taskInput.addEventListener("input", runEvent); //Run with everything that is an input
+
+function runEvent (event) {
+  console.log(`Event type: ${event.type}`);
+  console.log(event.target.value)
+  
+  //heading.innerText = event.target.value;
+  
+  // //Get input value
   // console.log(taskInput.value);
-
-  // e.preventDefault();
+  // event.preventDefault();  //to prevent the action in html run (in this case action="index.php")
 }
