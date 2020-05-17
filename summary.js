@@ -654,7 +654,7 @@ const player = {
 //const name = player.name
 //const age = player.age
 //console.log(name, age);
-
+19
 const { name, age } = player;
 console.log(name, age)
 */
@@ -686,6 +686,24 @@ console.log(sym3 === sym4);
 
 
 //14. Intantiation
+
+// function Person(name, dob) {
+// 	this.name = name;
+// 	this.birthday = new Date(dob);
+// 	this.calculateAge = function () {
+// 		console.log(this.birthday.getTime());
+// 		console.log(Date.now());
+// 		const diff = Date.now() - this.birthday.getTime();
+// 		const ageDate = new Date(diff);
+// 		return Math.abs(ageDate.getUTCFullYear() - 1970);  //Milliseconds ellapsed from Junuary 1, 1970
+// 	}
+// }
+// const andres = new Person("Andres", "04-01-1991");
+// console.log(andres.calculateAge());
+// console.log(andres.hasOwnProperty("name"));
+// console.log(andres.hasOwnProperty("age"));
+
+
 /*
 class Player {
 	constructor(name, type) {
