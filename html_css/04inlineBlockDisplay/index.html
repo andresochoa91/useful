@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline & Block styling</title>
+  <style>
+    li {
+      display: inline; /* to become block elements into inline elements */
+    }
+
+    li a {
+      padding-right: 20px;  
+    }
+
+    img {
+      display: block; /* transforms it into block element */
+      margin: auto; /* this just work on block elements */
+      width: 300px;
+    }
+
+    .box {
+      display: inline-block; /* to allow to have width because width is not allowed just in inline */
+      box-sizing: border-box;
+      width: 32%;
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#">Technology</a></li> <!-- lis are block elements -->
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Fashion</a></li>
+  </ul>
+  <br><br>
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.iconfinder.com%2Fdata%2Ficons%2Fdance-fill%2F100%2Frock_and_roll_dance_2-512.png&f=1&nofb=1" alt="dancing">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.iconfinder.com%2Fdata%2Ficons%2Fdance-fill%2F100%2Frock_and_roll_dance_2-512.png&f=1&nofb=1" alt="dancing">
+  <br><br>
+
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga dolorem ab, est quis id voluptates perferendis sunt possimus repudiandae quae.</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga dolorem ab, est quis id voluptates perferendis sunt possimus repudiandae quae.</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga dolorem ab, est quis id voluptates perferendis sunt possimus repudiandae quae.</p>
+  </div>
+
+</body>
+</html>
