@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links and buttons</title>
+  <style>
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none; /* without the underline */
+    }
+
+    a:hover {
+      color: coral;
+      font-size: 40px;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: red; /* With visited, When click at the first time, it keeps red. Not super useful */
+    }
+
+    a:active {
+      color: green; /* When button keeps pressed, it changes color to green */
+    }
+
+    .btn {
+      background: #4c6ca0;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 5px; /* for rounded corners */
+      cursor: pointer; /* Pointer to show up in buttons because buttons don't come with pointers */
+    }
+
+    .btn:hover{
+      color: #f4f4f4;
+      background: #446190;
+    }
+
+
+  </style>
+</head>
+<body>
+  <a class="btn" href="#">Click here</a>
+  <br>
+  <br>
+  <button class="btn">My button</button>
+</body>
+</html>

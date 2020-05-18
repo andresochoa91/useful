@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float & Align</title>
+  <style>
+
+    *{
+      box-sizing: border-box; /* Because we added padding to the width, we need to use border-box to make boxes fit*/
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4em;
+    }
+
+    .container {
+      max-width: 960px; /* Boundary. Recomended to use max-width in all the containers to make it responsive*/
+      margin: 30px /* on top and bottom */ auto;  /* Move to the middle */
+    }
+
+    .clr {
+      clear: both; /* To clear left and right floats */
+    }
+
+    .box {
+      background: #f4f4f4;
+      border: 1px solid #333;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+
+    .box p {
+      text-align: left; /* It just aligns text */
+      text-align: center; /* this overwrite the last one */
+      text-align: justify;
+    }
+
+    #box-2 {
+      float: left; /* When we use float, we actually want to have a width. Floats are not very used nowadays because we now have flexbox and css-grid */
+      width: 68%;
+    }
+
+    #box-3 {
+      float: right; /* When we use float, we actually want to have a width. Floats are not very used nowadays because we now have flexbox and css-grid */
+      width: 30%;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="box-1" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ab autem minus sapiente alias odio, dolorum est, magnam omnis provident distinctio dolore eius. Dolorum, alias labore. Non voluptas facere neque!</p>
+    </div>
+    <div id="box-2" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ab autem minus sapiente alias odio, dolorum est, magnam omnis provident distinctio dolore eius. Dolorum, alias labore. Non voluptas facere neque!</p>
+    </div>
+    <div id="box-3" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ab autem minus sapiente alias odio, dolorum est, magnam omnis provident distinctio dolore eius. Dolorum, alias labore. Non voluptas facere neque!</p>
+    </div>
+    <div class="clr"></div>
+    <div id="box-4" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ab autem minus sapiente alias odio, dolorum est, magnam omnis provident distinctio dolore eius. Dolorum, alias labore. Non voluptas facere neque!</p>
+    </div>
+  </div>
+</body>
+</html>
