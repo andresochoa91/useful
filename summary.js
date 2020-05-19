@@ -1232,3 +1232,142 @@ console.log(d);
 // 	return num > 4;
 // }
 // console.log(arr.find(above4));
+
+
+// //Arguments
+
+// function marry (person1, person2) {
+// 	console.log(arguments);  //The "arguments" keyword is BAD for code optimization
+// 	console.log(`${person1} and ${person2} are now married`);
+// }
+// marry("John", "Jenny");
+
+// function marry2 (person1, person2) {
+// 	console.log(Array.from(arguments));  //We can do this insted to optimize our code because now we are working with arrays, and not with the arguments object
+// 	console.log(`${person1} and ${person2} are now married`);
+// }
+// marry2("Matt", "Molly");
+
+// function marry3 (...args) {
+// 	console.log(Array.from(args));  //This is also a good alternative
+// 	console.log(`${args[0]} and ${args[1]} are now married`);
+// }
+// marry3("Sam", "Sammy");
+
+
+// //Scope chain
+
+// function sayMyName() {
+// 	let a = "a";
+// 	return function findName() {
+// 		let b = "b";
+// 		return function printName() {
+// 			let c = "c";
+// 			console.log(a);
+// 			console.log(b);
+// 			console.log(c);
+// 			return "Johan Ochoa";
+// 		}
+// 	}
+// }
+// console.log(sayMyName());
+// console.log(sayMyName()());
+// console.log(sayMyName()()());
+
+
+// let heyhey = function doodle() {
+// 	return "heyhey";
+// }
+// console.log(heyhey());
+// //console.log(doodle()); //it sends an error because doodle has it own scope
+
+
+// //Use strict
+
+// "use strict" //We use "use strict" to avoid that height is created in global scope after being invoked wierd
+// function wierd() {
+// 	height = 50;
+// }
+// wierd();
+// console.log(height);
+
+
+// //call() apply() bind()
+
+// //call   //run function
+// const wizard = {
+// 	name: "Merlin",
+// 	health: 100,
+// 	heal(num1, num2) {
+// 		return this.health += num1 + num2;
+// 	}
+// }
+
+// const archer = {
+// 	name: "Robin Hood",
+// 	health: 30
+// }
+// console.log(archer);
+// console.log(wizard.heal.call(archer, 50,  30));
+// //													         num1 num2 
+// console.log(archer);
+
+
+// //apply  //run function
+// const wizard = {
+// 	name: "Merlin",
+// 	health: 100,
+// 	heal(num1, num2) {
+// 		return this.health += num1 + num2;
+// 	}
+// }
+
+// const archer = {
+// 	name: "Robin Hood",
+// 	health: 30
+// }
+// console.log(archer);
+// console.log(wizard.heal.apply(archer, [50, 30]));
+// //													         num1 num2 
+// console.log(archer);
+
+
+//bind   //return function
+const wizard = {
+	name: "Merlin",
+	health: 100,
+	heal(num1, num2) {
+		return this.health += num1 + num2;
+	}
+}
+
+const archer = {
+	name: "Robin Hood",
+	health: 30
+}
+
+console.log(archer);
+const healArcher = wizard.heal.bind(archer, 50,  30); //bind allows us to store this keyword or the function for later use
+//													                num1 num2 
+healArcher();  
+console.log(archer);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
