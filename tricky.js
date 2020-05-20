@@ -22,8 +22,14 @@
 //console.log(1 == true);
 //console.log("" == false);
 //console.log(false == []);
+//console.log(false == "");
+//console.log(false == {});
 //console.log("" == 0);
+//console.log([] == 0);
+//console.log({} == 0);
+//console.log(undefined == 0);
 //console.log("" == []);
+//console.log("" == {});
 //console.log("Hello" + 1 + "Julia");
 //console.log("Hello" % 10); 
 //console.log(NaN === NaN);
@@ -61,9 +67,3 @@
 //console.log(null && "Andres");
 //console.log(NaN && "Andres");
 //console.log(undefined && "Andres");
-
-if (NaN) {
-    console.log("truthy");
-} else {
-    console.log("falsy");
-}

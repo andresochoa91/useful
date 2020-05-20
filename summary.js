@@ -1292,7 +1292,7 @@ console.log(d);
 // console.log(height);
 
 
-// //call() apply() bind()
+//call() apply() bind()
 
 // //call   //run function
 // const wizard = {
@@ -1332,32 +1332,59 @@ console.log(d);
 // console.log(archer);
 
 
-//bind   //return function
-const wizard = {
-	name: "Merlin",
-	health: 100,
-	heal(num1, num2) {
-		return this.health += num1 + num2;
-	}
-}
+// //bind   //return function
+// const wizard = {
+// 	name: "Merlin",
+// 	health: 100,
+// 	heal(num1, num2) {
+// 		return this.health += num1 + num2;
+// 	}
+// }
 
-const archer = {
-	name: "Robin Hood",
-	health: 30
-}
+// const archer = {
+// 	name: "Robin Hood",
+// 	health: 30
+// }
 
-console.log(archer);
-const healArcher = wizard.heal.bind(archer, 50,  30); //bind allows us to store this keyword or the function for later use
-//													                num1 num2 
-healArcher();  
-console.log(archer);
-
-
+// console.log(archer);
+// const healArcher = wizard.heal.bind(archer, 50,  30); //bind allows us to store this keyword or the function for later use
+// //													                num1 num2 
+// healArcher();  
+// console.log(archer);
 
 
+// //Bind with currying
+
+// function multiply (a, b) {
+//   return a * b;
+// }
+// const multiplyByTwo = multiply.bind(null, 2);
+// console.log(multiplyByTwo(8));
+
+// const multiplyByFour = multiply.bind(null, 4);
+// console.log(multiplyByFour(8));
 
 
+// //Cloning objects
 
+// let obj = {a: 1, b: 2, c: {hey: "try to change me"}};
+// let clone1 = {...obj};
+// let clone2 = Object.assign({}, obj);
+// let superClone = JSON.parse(JSON.stringify(obj));
+
+// console.log(obj);
+// console.log(clone1);
+// console.log(clone2);
+// console.log(superClone);
+// console.log("");
+
+// clone1.a = 2; 
+// clone1.c.hey = "I have changed"; //This is still refferencing an object in c
+
+// console.log(obj);
+// console.log(clone1);
+// console.log(clone2);
+// console.log(superClone);
 
 
 
