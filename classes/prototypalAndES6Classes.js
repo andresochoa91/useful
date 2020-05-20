@@ -53,6 +53,10 @@ class Customer extends Person {
   greeting () {
     return `Hello ${this.firstName} ${this.lastName}, welcome!!!. Your phone number is ${this.phone} and your membership is ${this.membership}`;
   }
+
+  static costMembership () { //Static method 
+    return "Cost membership: 300$ per year"
+  }
 }
 
 const person1 = new Person("John", "Connor");
@@ -61,4 +65,4 @@ const customer1 = new Customer("Tom", "Smith", "555 555 5555", "standard");
 console.log(person1.greeting());
 console.log(customer1.greeting());
 console.log(customer1);
-
+console.log(Customer.costMembership()); //Calling the static method
