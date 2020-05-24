@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin: auto;
+  max-width: 1000px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav {
+  background: #333;
+  color: #fff;
+  overflow: auto;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav h1 {
+  float: left;
+  padding-top: 15px;
+  max-width: 20%;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+  max-width: 80%;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background: #444;
+  color: #ffccaa;
+}
+
+main #showcase {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.xely5KUuMFhZTuQ1X5PNGgHaEK%26pid%3DApi&f=1");
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+main #showcase h1 {
+  display: block;
+  padding: 40px;
+  color: #fff;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#form {
+  background-color: #eee;
+  padding: 20px;
+  float: left;
+  width: 30%;
+  color: #000;
+  margin: 20px 20px;
+  border-radius: 8px 0 0 8px;
+}
+
+#form h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#form .box {
+  margin-bottom: 20px;
+}
+
+#form .box label {
+  display: block;
+}
+
+#form .box input {
+  width: 100%;
+  height: 20px;
+}
+
+#btn-form {
+  background-color: #00ff99;
+  color: #555;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+}
+
+#btn-form:hover {
+  background-color: #00cc55;
+}
+
+#bio {
+  background: #eee;
+  line-height: 1.7em;
+  text-align: justify;
+  margin: 20px;
+  padding: 20px;
+  float:inline-start;
+  max-width: 30%;
+}
+
+#bio h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+footer {
+  display: block;
+  background: #222;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
