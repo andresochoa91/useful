@@ -26,6 +26,8 @@ document.querySelector('li:nth-child(3)').style.color = 'yellow';
 document.querySelector('li:nth-child(4)').textContent = 'Hello World';
 document.querySelector('li:nth-child(odd)').style.background = '#ccc';
 document.querySelector('li:nth-child(even)').style.background = '#f4f4f4';
+document.querySelector("[title=hello]");  /* select type title that is equals to hello */
+document.querySelector('input').type = "checkbox";
 
 
 //SELECTORS MULTIPLE ELEMENTS
@@ -211,6 +213,7 @@ function onClick (event) {
   val = event.target.innerHTML;
   val = event.target.className;
   val = event.target.classList;
+  val = event.target.tagName;
   val = event.type;
   val = event.timeStamp;
   val = event.clientY; //Coords relative to the window in pixels
