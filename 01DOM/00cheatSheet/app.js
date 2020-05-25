@@ -130,66 +130,71 @@
 // li.appendChild(link);
 // // Append li as child to ul
 // document.querySelector('ul#nav-ul').appendChild(li);
+// document.querySelector("ul#nav-ul").insertBefore(li, document.querySelector("#nav-ul li:nth-child(3)"));
+// // console.log(document.querySelector("#nav-ul"))
 // console.log(li);
 
 
 
 
-
-// //REMOVING AND REPLACING ELEMENTS
-
-// //Replace element
+// // //REPLACING ELEMENTS
 // //Create Element
-// const newHeading = document.createElement("h2");
+// let newHeading = document.createElement("h2");
 // //Add id
-// newHeading.id = "task-title";
+// newHeading.id = "super-title";
 // //New text node
-// newHeading.appendChild(document.createTextNode("Taks list"));
+// newHeading.appendChild(document.createTextNode("DOM DOM DOM"));
 // //Get the old heading
-// const oldHeading = document.getElementById("task-title");
-// //Parent
-// const cardAction = document.querySelector('.card-action');
+// let oldHeading = document.querySelector("#form h2");
+// //Pick Parent
+// let form = document.querySelector('#form');
 // //Replace
-// cardAction.replaceChild(newHeading, oldHeading);
+// form.replaceChild(newHeading, oldHeading);
 
-// //Remove Element
-// const lis = document.querySelectorAll("li");
-// const list = document.querySelector("ul");
+
+
+
+// // //REMOVING ELEMENTS
+// let lis = document.querySelectorAll("li");
+// let list = document.querySelector("ul");
 // //Remove list item
 // lis[0].remove();
 // //Remove child element
 // list.removeChild(lis[3]);
-// //CLASSES & ATTRIBUTES
-// const firstLi = document.querySelector("li:first-child");
-// const link = firstLi.children[0];
-// let val;
 
+
+
+
+// // // CLASSES & ATTRIBUTES
+// let firstBox = document.querySelector(".box:first-child");
+// let link = firstBox.children[0];
+// let val;
 // //Classes
-// val = link.className;
-// val = link.classList;
-// val = link.classList[0];
+// val = firstBox.className;
+// val = firstBox.classList;
+// val = firstBox.classList[0];
 // link.classList.add("test");
 // link.classList.remove("test");
 // val = link;
 
 // //Attributes
-// val = link.getAttribute("href");
-// val = link.setAttribute("href", "http://google.com");
+// val = link.getAttribute("for");
 // link.setAttribute("title", "Google");
 // val = link.hasAttribute("title");
 // link.removeAttribute("title");
 // val = link;
-
 // console.log(val);
 
 
-// //EVENT LISTENERS AND EVENT OBJECT
 
-// document.querySelector('.clear-tasks').addEventListener("click", function() {
+
+// // //EVENT LISTENERS AND EVENT OBJECT
+
+// document.querySelector('#nav-ul').addEventListener("click", function() {
 //   console.log("hello");
 // })
 
-// document.querySelector(".clear-tasks").addEventListener("click", onClick);
+// document.querySelector("#nav-ul").addEventListener("click", onClick);
 
 // function onClick (event) {
 //   let val = event;
@@ -208,98 +213,108 @@
 // }
 
 
-// //MOUSE EVENTS
 
-// const clearBtn = document.querySelector('.clear-tasks');
-// const card = document.querySelector(".card");
-// const heading = document.querySelector("h5");
+
+// // // //MOUSE EVENTS
+// let deleteBtn = document.querySelector('#delete');
+// let bioMsg = document.querySelector("figcaption");
+// let bioHeading = document.querySelector("#bio h2");
 // //Click
-// clearBtn.addEventListener("click", runEvent);
-// clearBtn.addEventListener("dblclick", runEvent); //Double click
-// clearBtn.addEventListener("mousedown", runEvent); //When the mouse is hold
-// clearBtn.addEventListener("mouseup", runEvent); //the opposite of mousedown
-// clearBtn.addEventListener("mouseenter", runEvent); //When mouse is on the element 
-// clearBtn.addEventListener("mouseleave", runEvent); //Opposite of mouseenter 
-// clearBtn.addEventListener("mouseover", runEvent); //Similar to mouseLeave, but it fires when change element, even if is inside 
-// clearBtn.addEventListener("mouseout", runEvent); //Opposite of mouseover 
-// card.addEventListener("mousemove", runEvent);
-// //Event handler
+// deleteBtn.addEventListener("click", runEvent);
+// deleteBtn.addEventListener("dblclick", runEvent); //Double click
+// deleteBtn.addEventListener("mousedown", runEvent); //When the mouse is hold
+// deleteBtn.addEventListener("mouseup", runEvent); //the opposite of mousedown
+// deleteBtn.addEventListener("mouseenter", runEvent); //When mouse is on the element 
+// deleteBtn.addEventListener("mouseleave", runEvent); //Opposite of mouseenter 
+// deleteBtn.addEventListener("mouseover", runEvent); //Similar to mouseLeave, but it fires when change element, even if is inside 
+// deleteBtn.addEventListener("mouseout", runEvent); //Opposite of mouseover 
+// document.querySelector("#showcase").addEventListener("mousemove", runEvent);
+// // //Event handler
 // function runEvent(event) {
 //   console.log(`Event type: ${event.type}`);
-//   heading.textContent = `MouseZ: ${event.offsetX} MouseY ${event.offsetY}`;
+//   bioHeading.textContent = `MouseZ: ${event.offsetX} MouseY ${event.offsetY}`;
 //   document.body.style.backgroundColor = `rgb(${event.offsetX}, 120, ${event.offsetY})`;
 // }
 
 
-// //KEYBOARD EVENTS
 
-// const form = document.querySelector("form");
-// const taskInput = document.getElementById("task");
-// const heading = document.querySelector("h5");
 
-// taskInput.value = ""; //If I want to clear input
-// form.addEventListener("submit", runEvent);
-// taskInput.addEventListener("keydown", runEvent);
-// taskInput.addEventListener("keyup", runEvent); //When key up after pressing
-// taskInput.addEventListener("keypress", runEvent); //Generalized
-// taskInput.addEventListener("focus", runEvent); //When click on input
-// taskInput.addEventListener("blur", runEvent); //After clicking on input and afterwards clicking out
-// taskInput.addEventListener("change", runEvent); //Good with dropdowns
-// taskInput.addEventListener("cut", runEvent); //Run when cut inside input
-// taskInput.addEventListener("copy", runEvent); //Run when cut inside input
-// taskInput.addEventListener("paste", runEvent); //Run when cut inside input
-// taskInput.addEventListener("input", runEvent); //Run with everything that is an input
+// // //KEYBOARD EVENTS
+
+// let form = document.querySelector("#form");
+// let boxes = document.querySelectorAll("#form .box input");
+// let button = document.querySelector("#form .box button");
+// let heading = document.querySelector("#form h2");
+// let dropdown = document.querySelector("#drop select");
+// console.log(dropdown)
+
+// boxes.forEach(box => box.value = ""); //If I want to clear input
+// // form.addEventListener("submit", runEvent);
+// // form.addEventListener("keydown", runEvent);
+// // form.addEventListener("keyup", runEvent); //When key up after pressing
+// // form.addEventListener("keypress", runEvent); //Generalized
+// // form.children[1][0].addEventListener("focus", runEvent) //When click on input
+// // form.children[1][0].addEventListener("blur", runEvent); //After clicking on input and afterwards clicking out
+// // dropdown.addEventListener("change", runEvent); //Good with dropdowns
+// // form.addEventListener("cut", runEvent); //Run when cut inside input
+// // form.addEventListener("copy", runEvent); //Run when cut inside input
+// // form.addEventListener("paste", runEvent); //Run when cut inside input
+// form.addEventListener("input", runEvent); //Run with everything that is an input
 
 // function runEvent (event) {
 //   console.log(`Event type: ${event.type}`);
-//   console.log(event.target.value)
-  
+//   console.log(event.target);
+//   console.log(event.target.value);
 //   heading.innerText = event.target.value;
-  
 //   //Get input value
-//   console.log(taskInput.value);
 //   event.preventDefault();  //to prevent the action in html run (in this case action="index.php")
 // }
 
 
-// //EVENT BUBBLING
 
-// document.querySelector(".card-title").addEventListener("click", function() {
-//   console.log("card title");
+
+// // //EVENT BUBBLING
+
+// document.querySelector("header").addEventListener("click", function(event) {
+//   console.log("header");
+//   event.preventDefault();
 // });
 
-// document.querySelector(".card-content").addEventListener("click", function() {
-//   console.log("card content");
+// document.querySelector("header nav h1").addEventListener("click", function() {
+//   console.log("nav");
 // });
 
-// document.querySelector(".card").addEventListener("click", function() {
-//   console.log("card");
+// document.querySelector("header nav ul").addEventListener("click", function() {
+//   console.log("ul");
 // });
 
-// document.querySelector(".col").addEventListener("click", function() {
-//   console.log("col");
+// document.querySelector("header nav ul li").addEventListener("click", function() {
+//   console.log("li");
 // });
 
 
-// //Event delegation
 
-// const delItem = document.querySelector(".delete-item");
+
+// // //EVENT DELEGATION
+// let delItem = document.querySelector("#delete");
 // delItem.addEventListener("click", deleteItem);
 // document.body.addEventListener("click", deleteItem);
 
 // function deleteItem(event) {
-//   if (event.target.parentElement.className === "delete-item secondary-content") {
+//   if (event.target.parentElement.parentElement.parentElement.id === "bio") {
 //     console.log("delete item");
 //   }
 
-//   if (event.target.parentElement.classList.contains("delete-item")) { //This is better than above if you want to add new different classes to specific elements
+//   if (event.target.parentElement.classList.contains("fig")) { //This is better than above if you want to add new different classes to specific elements
 //     console.log("delete item");
 //     event.target.parentElement.parentElement.remove();   
 //   }
 // }
 
 
-// //LOCAL AND SESSION STORAGE
+
+
+// // //LOCAL AND SESSION STORAGE  /* for later */
 
 // //Set local storage item
 // localStorage.setItem("name", "John");
@@ -337,7 +352,6 @@
 
 // const tasks = JSON.parse(localStorage.getItem("tasks"));
 // tasks.forEach(task => console.log(task));
-
 
 
 
@@ -387,7 +401,6 @@
 // val = window.navigator.vendor;
 // val = window.navigator.language;
 // console.log(val);
-
 
 
 
