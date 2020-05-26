@@ -100,6 +100,14 @@ main #showcase h1 {
   height: 20px;
 }
 
+#m-status p {
+  display: inline;
+}
+
+#m-status input {
+  width: 0 !important;
+}
+
 .btn-form {
   background-color: #00ff99;
   color: #555;
@@ -128,6 +136,13 @@ main #showcase h1 {
 #bio h2 {
   text-align: center;
   margin: 20px 0;
+}
+
+#bio a {
+  display: block;
+  margin-top: 20px;
+  text-decoration: underline;
+  color: #00f;
 }
 
 #bio #delete:hover {
