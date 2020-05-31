@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Styling</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        line-height: 2;
+      }
+
+      body {
+        color: #fff;
+        margin: auto;
+      }
+
+      #container {
+        background-color: #88f;
+        margin: 40px 200px;
+        max-width: 1000px;
+        text-align: center;
+        padding: 30px;
+        box-shadow: 5px 5px 5px 10px #666, /* horizontal, vertical, blur, size, color */
+                    inset 0 0 30px #666; /* inset is optional to put shadow inside the box*/  
+        /* border-top-left-radius: 10px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 40px; */
+        /* border-radius: 10px 20px 40px 30px; */ /* same of above */
+        border-radius: 30% 80% ;
+      } 
+
+      #container h1, #container p {
+        text-shadow: 5px 10px 2px #444; /* horizontal, vertical, blur, color */
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Header</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, error.</p>
+      </div>
+      <footer>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </footer>
+    </div>
+  </body>
+</html>
