@@ -1,0 +1,22 @@
+[
+  {
+    "name" : "John",
+    "age" : 20,
+    "isValid": true
+  },
+  {
+    "name" : "Johan",
+    "age" : 29,
+    "isValid": false
+  },
+  {
+    "name" : "Johnny",
+    "age" : 22,
+    "isValid": true
+  },
+  {
+    "name" : "Johanna",
+    "age" : 28,
+    "isValid": true
+  }
+]
