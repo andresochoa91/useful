@@ -1,3 +1,40 @@
+//Callback
+let value = 3;
+
+function addFive(n) {
+  return n + 5;
+}
+
+function double(n) {
+  return n * 2;
+}
+
+function finalValue(n) {
+  console.log (`Your final value is ${n}`)
+}
+
+const math = (v, callback) => {
+  return callback(v); 
+}
+
+const cb = (v) => {
+  setTimeout(() => {
+    if (typeof v === "number") {
+      math(addFive(v), (val) => {
+        math(double(val), (val2) => {
+          math(val2, finalValue);
+        })
+      })
+    } else {
+      throw new Error("Fucking error");
+    }
+  }, 2000);
+}
+
+cb(value);
+
+
+// //Promises
 // let value = 5;
 
 // function addFive(n) {
@@ -15,7 +52,7 @@
 // const mathPromise = new Promise ((resolve, reject) => {
 //   setTimeout(() => {
 //     if (typeof value === "number") {
-//       resolve(5);
+//       resolve(value);
 //     } else {
 //       reject(Error("Fucking error"))
 //     }
@@ -29,34 +66,6 @@
 //   .catch(err => console.log(err) );
 
 
-let value = 3;
-
-function addFive(n) {
-  return n + 5;
-}
-
-function double(n) {
-  return n * 2;
-}
-
-function finalValue(n) {
-  return (`Your final value is ${n}`)
-}
-
-const math = (v, callback) => {
-  return callback(v); 
-}
-
-const cb = (v) => {
-  debugger
-  return math(addFive(v), (val) => {
-    return math(double(val), (val2) => {
-      return math(val2, finalValue);
-    })
-  })
-}
-
-console.log(cb(value));
 
 
 
