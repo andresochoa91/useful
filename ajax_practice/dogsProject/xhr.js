@@ -7,11 +7,6 @@ const input2 = document.querySelector("#input2");
 const commentsUrl = "https://jsonplaceholder.typicode.com/comments";
 let option;
 
-
-input1.addEventListener("keyup", (event) => {
-  console.log(event.target.value)
-})
-
 function getJSON (url, callback) {
   const xhr = new XMLHttpRequest();
   xhr.open("GET", url);

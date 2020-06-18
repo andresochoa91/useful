@@ -7,41 +7,19 @@ const input2 = document.querySelector("#input2");
 const commentsUrl = "https://jsonplaceholder.typicode.com/comments";
 let option;
 
-function getJSON (url) {
-  return new Promise((resolve, reject) => {
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", url);
-    xhr.onload = () => {
-      if (xhr.status === 200) {
-        let data = JSON.parse(xhr.responseText);
-        resolve (data);
-      } else {
-        reject (`Error: ${xhr.responseText}`);
-      }
-    }
-    xhr.onerror = () => reject("Error finding data");
-    xhr.send();
-  });
-}
-
-
-function postData (url, data) {
-  return new Promise((resolve, reject) => {
-    const xhr = new XMLHttpRequest();
-    xhr.open("POST", url, true);
-    xhr.setRequestHeader("Content-type", "application/json");
-    xhr.onload = () => {
-      resolve(xhr.responseText);
-    }
-    xhr.onerror = () => reject(xhr.responseText);
-    xhr.send(JSON.stringify(data));
-  });
-}
-
-
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  postData(commentsUrl, {name: input1.value, comment: input2.value})
+  let name = input1.value;
+  let comment = input2.value;
+
+  fetch(commentsUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ name, comment })
+  })
+    .then(response => response.json())
     .then(console.log);
 })
 
@@ -61,16 +39,18 @@ select.addEventListener("click", () => {
   }
 })
 
-getJSON(allBreeds)
-  .then(response => list(response))
+fetch(allBreeds)
+  .then(response => response.json())
+  .then(data => list(data))
   .catch(err => console.error(err));
 
 btn.addEventListener("click", () => {
   randomImage = `https://dog.ceo/api/breed/${option}/images/random`;
-  getJSON(randomImage)
-    .then(response => {
+  fetch(randomImage)
+    .then(response => response.json())
+    .then(data => {
       let im = document.querySelector("img");
-      im.src = response.message;
+      im.src = data.message;
       im.alt = "img";
     })
     .catch(err => console.error(err));
