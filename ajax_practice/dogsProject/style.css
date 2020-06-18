@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, select, img, button, input, label, h2 {
+  display: block;
+  margin: 10px;
+}
+
+img {
+  height: 400px;
+}
