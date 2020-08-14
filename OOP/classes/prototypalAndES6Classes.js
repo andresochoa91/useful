@@ -66,3 +66,6 @@ console.log(person1.greeting());
 console.log(customer1.greeting());
 console.log(customer1);
 console.log(Customer.costMembership()); //Calling the static method
+
+console.log(customer1 instanceof Customer); //To know if something is an instance of a class
+console.log(customer1 instanceof Person);
