@@ -5,24 +5,48 @@ const user = {
   purchases: []
 }
 
-console.log(purchaseItem(user, {name: "laptop", price: 344}));
+const compose = (f, g) => (...args) => f(g(...args));
 
-function purchaseItem (user, item) {
-  return Object.assign({}, user, {purchases: item})
+const history = [];
+
+console.log(purchaseItem(
+  emptyCart,
+  buyItem,
+  applyTaxToItems,
+  addItemToCart
+)(user, {name: "laptop", price: 200}));
+
+function purchaseItem (...fns) {
+  return fns.reduce(compose)
 }
 
-function addItemToCart () {
-
+function addItemToCart (user, item) {
+  history.push(user);
+  const updatedCart = user.cart.concat([item]);
+  return Object.assign({}, user, { cart: updatedCart });
 }
 
-function applyTaxToItems () {
-
+function applyTaxToItems (user) {
+  history.push(user);
+  const { cart } = user;
+  const taxRate = 1.3;
+  const updatedCart = cart.map(item => {
+    return {
+      name: item.name,
+      price: item.price * taxRate
+    }
+  });
+  return Object.assign({}, user, { cart: updatedCart });
 }
 
-function buyItem () {
-
+function buyItem (user) {
+  history.push(user);
+  return Object.assign({}, user, { purchases: user.cart });
 }
 
-function emptyCart () {
-
+function emptyCart (user) {
+  history.push(user);
+  return Object.assign({}, user, { cart: [] });
 }
+
+console.log(history);
